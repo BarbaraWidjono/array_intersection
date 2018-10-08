@@ -28,9 +28,9 @@ describe "array intersection" do
       intersection(array1, array2).sort!.must_equal expected_intersection
     end
   end
-
+  #
   describe "edge cases" do
-    # if the parameter is an object, check for nil
+  #   # if the parameter is an object, check for nil
     it "first parameter nil" do
       array1 = nil
       array2 = [89, 76, 4, 1]
@@ -38,7 +38,7 @@ describe "array intersection" do
 
       intersection(array1, array2).must_equal expected_intersection
     end
-
+  #
     it "second parameter nil" do
       array1 = [92, 2, 5, 90]
       array2 = nil
@@ -46,7 +46,7 @@ describe "array intersection" do
 
       intersection(array1, array2).must_equal expected_intersection
     end
-
+  #
     it "first array empty" do
       array1 = []
       array2 = [70, 90, 34, 21, 78, 42]
@@ -54,7 +54,7 @@ describe "array intersection" do
 
       intersection(array1, array2).sort!.must_equal expected_intersection
     end
-
+  #
     it "second array empty" do
       array1 = [70, 90, 34, 21, 78, 42]
       array2 = []
@@ -62,7 +62,7 @@ describe "array intersection" do
 
       intersection(array1, array2).sort!.must_equal expected_intersection
     end
-
+  #
     it "both arrays empty" do
       array1 = []
       array2 = []
@@ -70,7 +70,7 @@ describe "array intersection" do
 
       intersection(array1, array2).sort!.must_equal expected_intersection
     end
-
+  #
     it "all elements common" do
       array1 = [2, 5, 4, 1, 89]
       array2 = [89, 5, 4, 1, 2]
